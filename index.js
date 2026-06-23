@@ -5,7 +5,9 @@ window.addEventListener('load', function(){
         load.style.display ='none';
     },1500);
 })
-// 
+//
+
+
 let navbar = document.getElementById('navbar');
 let  navbarbrand = document.getElementById('navbarbrandimg');
 
@@ -16,7 +18,24 @@ window.addEventListener('scroll', function(){
         navbarbrand.src="photos/logo2.png";
     }
     else{
-        navbar.style.backgroundColor="black"
+        navbar.style.backgroundColor="#000";
         navbarbrand.src="photos/logo1.png";
     }
 })
+// 
+let testimain = document.getElementById('testimain');
+
+let btnsreview1 = document.getElementById('btnsreview1');
+let btnsreview2 = document.getElementById('btnsreview2');
+
+btnsreview1.addEventListener('click', function(){
+    testimain.scrollLeft +=380;
+   
+})
+btnsreview2.addEventListener('click', function(){
+    testimain.scrollLeft -=380;
+   
+})
+//
+//
+

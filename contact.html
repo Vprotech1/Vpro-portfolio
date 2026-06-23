@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPRO-TECH Contact </title>
+
+    <!-- meta open graph -->
+    <meta property="og:type" content="website">
+
+    <meta property="og:title" content="VPRO-TECH | Full-Stack Developer & Digital Solutions ">
+
+    <meta property="og:description"
+        content="Building modern websites, web applications,and digital experience for businesses and brand">
+
+    <meta property="og:image" content="https://photos/lg.png">
+
+    <!-- site url -->
+    <meta property="og:url" content="https://">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c125bea3e1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="photos/logo3.ico" type="image/x-icon">
+
+
+
+    <style>
+        .contact-sec-main {
+            text-align: center;
+            background-color: #4d146e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            height: 64vh;
+            padding: 16px 0;
+
+
+        }
+
+        .contact-sm h6 {
+            font-size: 15px !important;
+            color: var(--bgortext-color-white);
+            animation: pop 2s infinite linear;
+            border-radius: 60px;
+            background: rgba(180, 99, 146, 0.25);
+            border: 1px solid rgb(176, 140, 212);
+            backdrop-filter: blur(10px);
+            display: inline-block;
+            padding: 10px 15px;
+            text-align: center;
+
+        }
+
+        .contact-sm h3 {
+            font-size: 2.5rem;
+        }
+
+        .em-nu-main {
+            text-align: center;
+            margin: 30px 0;
+
+        }
+
+        .em-nu-ch {
+            background: #572177;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            width: 300px;
+            margin: auto;
+            text-align: left;
+            box-shadow: 0px 3px 1px #450d6b;
+
+        }
+
+        .em-nu-ch a {
+            text-decoration: none;
+            color: var(--bgortext-color-white);
+        }
+
+        .em-nu-ch .fa-envelope,
+        .fa-phone {
+            background-color: #6d28d9;
+            color: #fff;
+            text-align: left;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            transition: 0.9s ease;
+            padding: 15px;
+
+        }
+
+        .fa-envelope:hover,
+        .fa-phone:hover {
+            transform: rotate(35deg);
+            background-color: #fff;
+            color: #6d28d9;
+        }
+
+        /*  */
+        .fill-main {
+
+            text-align: center;
+        }
+        .fill-ch{
+            display: inline-block;
+        }
+        .fill-ch label {
+            display: block;
+            text-align: left;
+    
+        }
+
+        .fill-ch input,
+        select {
+            width: 350px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #6d28d9;
+        }
+
+        form textarea {
+            border-radius: 10px;
+            border: 1px solid #6d28d9;
+            padding: 10px;
+
+        }
+
+        .fill-text {
+            margin: 20px 0 20px 0;
+        }
+
+        form input:focus {
+            border: 2px solid #6d28d9;
+            outline: none;
+        }
+
+
+        .fill-btn button {
+            color: var(--bgortext-color-white);
+            background-color: #6d28d9;
+            display: inline-block;
+            border: none;
+            padding: 10px;
+            width: 1030px;
+            border-radius: 10px;
+        }
+        /*  */
+        @media (max-width: 767px) {
+
+    .contact-sec-main {
+        height: auto;
+        padding: 50px 15px;
+    }
+
+    .contact-sm h3 {
+        font-size: 1.8rem;
+    }
+
+    .contact-sm p br {
+        display: none;
+    }
+
+    .em-nu-ch {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .fill-ch {
+        width: 100%;
+    }
+
+    .fill-ch input,
+    .fill-ch select {
+        width: 100%;
+    }
+
+    .fill-text textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .fill-btn button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .contact-sec-main {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .em-nu-ch {
+        width: 100%;
+    }
+
+    .fill-ch input,
+    .fill-ch select {
+        width: 100%;
+    }
+
+    .fill-text textarea {
+        width: 100%;
+    }
+
+    .fill-btn button {
+        width: 100%;
+    }
+}
+    </style>
+
+    <head>
+
+    <body>
+
+        <div class="loading" id="load">
+            <div class="load-pa">
+                <p class="load-la">
+                </p>
+            </div>
+            <p>loading.....</p>
+
+        </div>
+
+
+        <!--  -->
+        <nav class="navbar navbar-expand-lg  " id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <span><img id="navbarbrandimg" src="photos/lg.png"
+                            alt="logo"></span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service-main">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--  -->
+
+
+        <div class="contact-sec-main">
+            <div class="contact-sm">
+                <h6>Get In Touch</h6>
+                <h3>Thinking About a project?</h3>
+                <h3>Let's Build It <span>Together</span></h3>
+                <p>From concept to completion, i can help you create a clean and functional digital solution that fits
+                    your goals.</p>
+            </div>
+
+            <div class="aboutfor-cl">
+
+                <div class="aboutfor-ch">
+                    <h4>10+</h4>
+                    <p>Projects Completed</p>
+                </div>
+
+                <div class="aboutfor-ch">
+                    <h4>5+</h4>
+                    <p>Happy Clients</p>
+                </div>
+
+                <div class="aboutfor-ch">
+                    <h4>3+</h4>
+                    <p>Years Experience</p>
+                </div>
+
+                <div class="aboutfor-ch">
+                    <h4>100%</h4>
+                    <p>Clients Satisfaction</p>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+
+        <div class="em-nu-main">
+
+
+            <div class="row">
+                <div class="col-6 col-lg-6">
+                    <div class="em-nu-ch">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:viesscott@gmail.com">viesscott@gmail.com</a>
+                        <p>Send us a message anytime.</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-6 ">
+                    <div class="em-nu-ch">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Call us</h3>
+                        <a href="tel:09050188834">+234 905 018 8834</a>
+                        <p>Give us a call anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="fill-main">
+            <form action="">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="fill-ch">
+                            <label for="Your Name*">Your Name*</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <div class="fill-ch">
+                            <label for="Email Address*">Email Address*</label>
+                            <input type="email" placeholder="John@exmple.com" autocomplete="on" required>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 h">
+                        <div class="fill-ch">
+                            <label for="Phone Number*">Phone Number*</label>
+                            <input type="text" placeholder="080 8088 0080" required>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <div class="fill-ch">
+                            <label for="Service Needed*">Service Needed*</label>
+                            <select name="" id="">
+                                <option value="">Select a service</option>
+                                <option value="">Web design</option>
+                                <option value="">App Development</option>
+                                <option value="">Website Development</option>
+                                <option value="">SEO Optimization</option>
+                                <option value="">Business Websites</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="fill-text">
+                            <textarea cols="135" rows="4" placeholder="Tell me about your project or service needs."></textarea>
+                        </div>
+                    </div>
+                    <div class="fill-btn">
+                        <button>Summit</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <!--  -->
+         <!--  -->
+    <div class="footer-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-lg-3 col-md-4">
+                <div class="foot-ch">
+                    <h4>VPRO-TECH</h4>
+                    <p>Building modern digital solutions with creativity, performance, and purpose</p>
+                      <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-md-4">
+                <div class="foot-ch">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a><br>
+                    <a href="about.html">About</a><br>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3  col-md-4">
+                <div class="foot-ch foot-hv">
+                    <h4>services</h4>
+                    <p>Web Development</p>
+                    <p>Website Design</p>
+                    <p>App Development</p>
+                    <p>S E O Optimization</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3  col-md-4">
+                <div class="foot-ch foot-hv">
+                    <h4>Working Hours</h4>
+                    <i class="fa-solid fa-clock"></i><span>Monday-Friday</span>
+                    <p>8:30 AM - 6 PM</p>
+
+                    <i class="fa-solid fa-clock"></i><span>Saturday</span>
+                    <p>10:00 AM - 4:00 PM</p>
+
+                    <i class="fa-solid fa-clock"></i><span>Sunday</span>
+                    <p>Closed</p>
+                </div>
+            </div>
+
+        </div>
+       <span> &copy; 2026 VPRO-TECH. All Rights Reserved.</span> 
+    </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </body>
+
+</html>
