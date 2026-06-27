@@ -18,6 +18,9 @@ html {
 
 :root {
     --bgortext-color-white: #fff;
+    --font-family: "Bungee", sans-serif;
+    --font-weight: 400;
+    --font-style: normal;
 }
 
 .row {
@@ -107,15 +110,43 @@ html {
     color: var(--bgortext-color-white) !important;
 
 }
-.navbar-toggler{
+
+.navbar-toggler {
     color: var(--bgortext-color-white);
 }
-.navbar-toggler-icon{
+
+.navbar-toggler-icon {
     filter: invert(1);
 }
 
+#lightdark {
+    background-color: #64198f;
+    color: var(--bgortext-color-white);
+    border: none;
+    border-radius: 10%;
+    padding: 12px;
+    cursor: pointer;
+}
 
+.dark-mode {
+    background-color: #bb8cf8;
 
+}
+
+.dark-mode .main {
+    background: linear-gradient(135deg, #e9d7ff, 0%, #d7b8ff, 50%, #c69bff 100%);
+}
+
+/*  */
+.dark-mode .tech-st h3,
+.dark-mode .about-main h3,
+.dark-mode .service-first h3,
+.dark-mode .project-first h3,
+.dark-mode .testi h3 {
+    background: linear-gradient(90deg, #3f007d, #6a0dad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /*  */
 
@@ -165,13 +196,23 @@ html {
 }
 
 .hero-first h2 {
-    font-size: 3rem;
+    font-size: 3rem !important;
     font-weight: 900;
     background: linear-gradient(90deg, #fff, #c084fc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: var(--font-family);
+    font-size: var(--font-style);
+    font-weight: var(--font-weight);
 
 
+}
+
+.dark-mode .hero-first h2 {
+    background: linear-gradient(90deg, #3f007d, #6a0dad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 
 .hero-first h2 span {
@@ -191,6 +232,11 @@ html {
     border-radius: 2px;
 }
 
+.dark-mode .hero-first h2 span {
+    background: linear-gradient(120deg, #3f007d, #6a0dad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .hero-first-sc {
     padding: 10px;
@@ -201,6 +247,10 @@ html {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2rem;
     word-spacing: 2px;
+}
+
+.dark-mode .hero-first-sc p {
+    color: #5a189a;
 }
 
 /* second hero */
@@ -1039,7 +1089,7 @@ html {
         padding: 40px 15px;
     }
 
-   
+
     .about-main p br {
         display: none;
     }
@@ -1103,6 +1153,7 @@ html {
         margin-bottom: 20px;
     }
 }
+
 /* done for media quires for small device */
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1123,7 +1174,7 @@ html {
     }
 
     .hero-first h2 {
-        font-size: 2.5rem;
+        font-size: 2rem !important;
     }
 
     .hero-second {
@@ -1152,7 +1203,8 @@ html {
     .aboutfor-cl {
         flex-wrap: wrap;
     }
-    .aboutfor-ch{
+
+    .aboutfor-ch {
         margin: 10px;
     }
 

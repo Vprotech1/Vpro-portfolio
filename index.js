@@ -7,7 +7,7 @@ window.addEventListener('load', function(){
 })
 //
 
-
+let brocode =document.getElementById('vpr');
 let navbar = document.getElementById('navbar');
 let  navbarbrand = document.getElementById('navbarbrandimg');
 
@@ -39,3 +39,7 @@ btnsreview2.addEventListener('click', function(){
 //
 //
 
+let lightdark = document.getElementById('lightdark');
+lightdark.addEventListener('click', function(){
+    document.body.classList.toggle('dark-mode');
+})
