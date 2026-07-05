@@ -190,7 +190,7 @@ html {
     background: radial-gradient(circle at top, #2a003f, #6a0dad, #3b0a57);
     color: var(--bgortext-color-white);
     overflow-x: hidden;
-    height: 120vh;
+    height: 100vh;
     background-attachment: fixed;
 }
 
