@@ -957,7 +957,7 @@ html {
         transform: translateX(5px);
     }
     to{
-        transform: translateX(100px);
+        transform: translateX(-200px);
     }
 }
 
