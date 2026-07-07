@@ -952,6 +952,9 @@ html {
 
 
 }
+.testscroll{
+        animation: testscroll 1s infinite linear;
+}
 @keyframes testscroll{
     from{
         transform: translateX(5px);
