@@ -952,17 +952,6 @@ html {
 
 
 }
-.testscroll{
-        animation: testscroll 1s infinite linear;
-}
-@keyframes testscroll{
-    from{
-        transform: translateX(5px);
-    }
-    to{
-        transform: translateX(-200px);
-    }
-}
 
 .testi h3 {
     font-size: 2.5rem;
