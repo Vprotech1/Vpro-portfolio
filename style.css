@@ -1218,7 +1218,7 @@ section {
     }
 
 
-    .about-main p {
+    .about-main p br{
         display: none;
     }
 
