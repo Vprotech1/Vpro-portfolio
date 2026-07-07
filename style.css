@@ -1218,9 +1218,6 @@ section {
     }
 
 
-    .about-main p br{
-        display: none;
-    }
 
     .aboutfor-cl {
         flex-wrap: wrap;
