@@ -482,8 +482,8 @@ html {
 .about-main p {
     margin-bottom: 25px;
     font-size: 1.1rem;
-    line-height: 2;
-    word-spacing: 2px;
+    
+
 }
 
 .about-main a {
@@ -1217,6 +1217,9 @@ section {
         padding: 20px 15px;
     }
 
+    .about-main p br{
+        display: none;
+    }
 
 
     .aboutfor-cl {
