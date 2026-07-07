@@ -1214,11 +1214,11 @@ section {
 
     /* About */
     .about-main {
-        padding: 40px 15px;
+        padding: 20px 15px;
     }
 
 
-    .about-main p br {
+    .about-main p {
         display: none;
     }
 
