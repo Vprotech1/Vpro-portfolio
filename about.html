@@ -1,470 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-        <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YV8QT9W566"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YV8QT9W566');
-</script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- google search -->
-    <meta name="google-site-verification" content="wfZUfi6pA0INEGPKWK-PobmfECgV49cNLSBhYSva0JM" />
-
-    <title>VPRO-TECH About</title>
-
-    <!-- meta open graph -->
-    <meta property="og:type" content="website">
-
-    <meta property="og:title" content="VPRO-TECH | Full-Stack Developer & Digital Solutions ">
-
-    <meta property="og:description"
-        content="Building modern websites, web applications,and digital experience for businesses and brand">
-
-    <meta property="og:image" content="https://vprotechlabs.vercel.app/photos/lg.png">
-
-    <!-- site url -->
-    <meta property="og:url" content="https://vprotechlabs.vercel.app/">
-
-
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-
-    <!--for nav, footer  -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
-    <!--  -->
-
-    <!-- font tech stack, about, service.... -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-
-
-    <!-- for p -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-
-
-    <!-- cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!--  -->
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!--  -->
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c125bea3e1.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="photos/lo.ico" type="image/x-icon">
-
-
-    <style>
-        body {
-            background: #1a002b;
-
-        }
-
-        .about-full-sec {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            flex-direction: column;
-            height: 64vh;
-            color: var(--bgortext-color-white);
-            background-color: #64198f;
-
-        }
-
-        .about-full-ch h6 {
-            font-size: 15px !important;
-            color: var(--bgortext-color-white);
-            animation: pop 2s infinite linear;
-            border-radius: 60px;
-            background: rgba(180, 99, 146, 0.25);
-            border: 1px solid rgb(176, 140, 212);
-            backdrop-filter: blur(10px);
-            display: inline-block;
-            padding: 10px 15px;
-            text-align: center;
-
-        }
-
-        @keyframes pop {
-            0% {
-                transform: scale(0.90);
-            }
-
-            50% {
-                transform: scale(1);
-            }
-
-            100% {
-                transform: scale(0.90);
-            }
-        }
-
-        .about-full-ch h1 {
-            font-size: 2.8rem !important;
-            font-weight: 900;
-            background: linear-gradient(90deg, #fff, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: var(--font-family);
-            font-size: var(--font-style);
-            font-weight: var(--font-weight);
-
-        }
-
-        .about-full-bg {
-            color: #fff;
-            margin: 50px 0;
-        }
-
-        .about-con {
-            background: rgba(128, 0, 128, 0.2);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            padding: 10px 20px;
-            border: 1px dotted var(--bgortext-color-white);
-            margin: 10px 5px;
-        }
-
-        .about-con h4 {
-            background: linear-gradient(90deg, #c084fc, #fff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: var(--fontfor-nav-family);
-            font-weight: var(--forfor-nav-weight-font-weight);
-            font-style: var(--fontfor-nav-font-style);
-            font-size: 25px;
-
-        }
-
-        .Ready-sec {
-            background: linear-gradient(90deg, #a855f7, #6d28d9);
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-
-            width: 800px;
-            border-radius: 10px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-
-        .Ready-sec h2 {
-            font-family: var(--fontfor-nav-family);
-            font-weight: var(--forfor-nav-weight-font-weight);
-            font-style: var(--fontfor-nav-font-style);
-        }
-
-        /*  */
-
-
-        .Ready-sec a {
-            background-color: var(--bgortext-color-white);
-            color: #6d28d9;
-            display: inline-block;
-            text-decoration: none;
-            padding: 10px;
-            width: 130px;
-            border-radius: 10px;
-        }
-
-        /*  */
-        @media (max-width: 767px) {
-
-            .about-full-sec {
-                height: auto;
-                padding: 50px 15px;
-            }
-
-            .about-full-ch h1 {
-                font-size: 2rem;
-            }
-
-            .about-full-ch p br {
-                display: none;
-            }
-
-            .Ready-sec {
-                width: 95%;
-                height: auto;
-                padding: 25px 15px;
-            }
-
-            .about-con {
-                margin: 15px 0;
-            }
-        }
-
-        @media (min-width: 768px) and (max-width: 1024px) {
-
-            .about-full-sec {
-                height: auto;
-                padding: 60px 20px;
-            }
-
-            .about-full-ch h1 {
-                font-size: 2.7rem;
-            }
-
-            .Ready-sec {
-                width: 90%;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="loading" id="load">
-        <div class="load-pa">
-            <p class="load-la">
-            </p>
-        </div>
-        <p>loading.....</p>
-
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YV8QT9W566');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="wfZUfi6pA0INEGPKWK-PobmfECgV49cNLSBhYSva0JM">
+<title>About | VPRO-TECH</title>
+<meta name="description" content="Meet the full-stack developer behind VPRO-TECH: education, training and goals.">
+<meta name="theme-color" content="#12001f">
+<link rel="canonical" href="https://vprotechlabs.vercel.app/about.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About | VPRO-TECH">
+<meta property="og:description" content="Meet the full-stack developer behind VPRO-TECH: education, training and goals.">
+<meta property="og:image" content="https://vprotechlabs.vercel.app/photos/lg.png">
+<meta property="og:url" content="https://vprotechlabs.vercel.app/about.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="photos/lo.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="loader" aria-hidden="true"><div><img src="photos/logo-white.webp" alt=""><div class="bar"><i></i></div></div></div>
+<div class="scroll-progress" aria-hidden="true"></div>
+<div class="ambient" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="VPRO-TECH home"><img class="logo-dark" src="photos/logo-white.webp" alt="VPRO-TECH" width="135" height="40"><img class="logo-light" src="photos/logo-purple.webp" alt="VPRO-TECH" width="100" height="30"></a>
+    <nav class="nav-links" aria-label="Main"><a href="index.html">Home</a><a href="index.html#services">Services</a><a href="index.html#projects">Projects</a><a href="about.html" class="active" aria-current="page">About</a><a href="contact.html">Contact</a></nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme" type="button" aria-label="Switch to light mode"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+      <a class="btn" href="contact.html">Start a project</a>
+      <button class="icon-btn burger" type="button" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
     </div>
+  </div>
+</header>
+<main>
+<section class="page-head"><div class="wrap">
+  <span class="eyebrow fade-up">About me</span>
+  <h1 class="fade-up d1">My name is <span class="grad-text">Ebiaguanye Victorious Iroseyike</span></h1>
+  <p class="fade-up d2">I'm a full-stack developer focused on building modern, responsive and user-friendly web applications. I enjoy turning ideas into real digital products with clean design and strong functionality.</p>
+</div></section>
 
-
-
-    <!--  -->
-    <nav class="navbar navbar-expand-lg  " id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"> <span><img id="navbarbrandimg" src="photos/llg.png" alt="logo"></span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#service-main">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#Portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!--  -->
-    <section>
-
-        <div class="about-full-sec">
-            <div class="container">
-                <div class="about-full-ch" data-aos="zoom-in">
-                    <h6>About Me</h6>
-                    <h1>My name is <b>Ebiaguanye Victorious <br> Iroseyike</b> </h1>
-                    <p>i am a Full-Stack Developer focused on
-                        building modern, responsive, and <br> user-friendly web applications. I enjoy turning ideas into
-                        real digital
-                        products with clean design and strong functionalality.
-                    </p>
-                    <p>
-                        I specialize in building complete web solutions, working across both <b>Front-End and
-                            Back-End</b>
-                        to
-                        <br> deliver smooth and efficient user experience.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!--  -->
-
-    <section>
-
-        <div class="about-full-bg">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-6">
-
-                        <div class="about-con" data-aos="fade-right">
-                            <h4>Education</h4>
-
-                            <p>I am currently a ND 2 final student at Auchi polytechnic Auchi, where i am
-                                building a
-                                strong
-                                foundation in computer and software-related studies</p>
-                            <p>Alongside my academic journey,I completed a professional certification in Full-Stack Web
-                                Development at
-                                <b>SOFT-PRO IT FIRM</b>,where i gained pratical experience
-                                in building modern web appliczation using <b>HTML,CSS,JAVASCRIPT,</b>and <b>Back-End
-                                    Technologies.</b>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-lg-6">
-                        <div class="about-con" data-aos="fade-left">
-                            <h4>Experience/Journey</h4>
-                            <p>i completed my professional training in <b>Full-Stack Web Development</b> at SOFT PRO IT
-                                FIRM,
-                                where i
-                                gained hands
-                                on experience in building modern web applications. During this period, i worked with
-                                core
-                                Web
-                                Technologies such as <b>HTML,CSS,JAVASCRIPT</b>,
-                                and Back-End fundamentals,applying them to real pratice projects.
-                            </p>
-                            <p>Through consistent pratice and project-based learning, i developed the ability to
-                                structure
-                                responsive
-                                interfaces, implement interactive features, and understand how Front-End and Back-End
-                                systems
-                                connect in
-                                real applications.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="col">
-
-                        <div class="about-con" data-aos="fade-right">
-                            <h4>Goal</h4>
-                            <p>
-                                my goal is to grow as a professional Full-Stack Developer and build real-world web
-                                applications
-                                that
-                                solve pratical problems.i aim to continuously improve my skills,work on more advanced
-                                projects,and
-                                become proficient in building scalable and efficient digital solutions.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-    <!--  -->
-
-
-    <div class='Ready-sec'>
-        <h2>
-            Ready to Start Your Project?</h2>
-        <p>Let's work together to create something amazing. I'm here to help bring your vision to life.</p>
-        <a href="contact.html">Contact <i class="fa-solid fa-arrow-right"></i></a>
-
+<section class="section" style="padding-top:30px"><div class="wrap bio">
+  <div class="photo reveal left"><img src="photos/portrait.webp" alt="Ebiaguanye Victorious Iroseyike" width="760" height="1009"></div>
+  <div>
+    <div class="reveal">
+      <h2>Complete web solutions, <span class="grad-text">front to back</span></h2>
+      <p>I specialise in building complete web solutions, working across both the <span class="hl">front end</span> and the <span class="hl">back end</span> to deliver smooth and efficient user experiences.</p>
     </div>
-
-
-    <!--  -->
-
-    <div class="footer-main">
-        <div class="container">
-            <div class="row">
-                <div class="col-6  col-md-6 col-lg-4">
-                    <div class="foot-ch">
-                        <h4>VPRO-TECH</h4>
-                        <p>Building modern digital solutions with creativity, performance, and purpose</p>
-                        <a href="https://wa.me/message/3MCHQLN3LTTCP1"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61591227853410"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="foot-ch">
-                        <h4>Quick Links</h4>
-                        <a href="#">Home</a><br>
-                        <a href="index.html#skill">Skills</a><br>
-                        <a href="index.html#Portfolio">Projects</a><br>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-6 col-lg-4 ">
-                    <div class="foot-ch ">
-                        <h4>services</h4>
-                        <span>Web Development</span><br>
-                        <span>Website Design</span><br>
-                        <span>App Development</span><br>
-                        <span>S E O Optimization</span><br>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="foot-ch ">
-                        <h4>Contact Information</h4>
-                        <a href="mailto:vprotechlabs@gmail.com"> <i class="fa-solid fa-envelope"></i> vprotechlabs<span
-                                class="brr">@gmail.com</span></a><br>
-                        <a href="tel:09050188834"><i class="fa-solid fa-phone"></i> 09050188834</a>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="foot-ch">
-                        <h4>Legal</h4>
-                        <a href="terms.html">Terms and Condition</a><br>
-                        <a href="privacy.html">Privacy Policy</a>
-                    </div>
-                </div>
-
-
-
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="foot-ch ">
-                        <h4>Working Hours</h4>
-                        <i class="fa-solid fa-clock"></i><span>Monday-Friday</span><br>
-                        <span>8:30 AM - 6 PM</span><br>
-
-                        <i class="fa-solid fa-clock"></i><span>Saturday</span><br>
-                        <span>10:00 AM - 4:00 PM</span><br>
-
-                        <i class="fa-solid fa-clock"></i><span>Sunday</span> <br>
-                        <span>Closed</span>
-                    </div>
-                </div>
-
-            </div>
-            <span class="copyright"> &copy; 2026 VPRO-TECH. All Rights Reserved.</span>
-        </div>
+    <div class="stats"><div class="stat reveal" style="--d:0.0s"><strong data-count="10" data-suffix="+">0+</strong><span>Projects completed</span></div><div class="stat reveal" style="--d:0.08s"><strong data-count="5" data-suffix="+">0+</strong><span>Happy clients</span></div><div class="stat reveal" style="--d:0.16s"><strong data-count="3" data-suffix="+">0+</strong><span>Years experience</span></div><div class="stat reveal" style="--d:0.24s"><strong data-count="100" data-suffix="%">0%</strong><span>Client satisfaction</span></div></div>
+    <div class="timeline">
+      <div class="item reveal"><div class="card"><span class="k">Education</span><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg> Auchi Polytechnic, Auchi</h3><p>I'm currently an ND 2 final-year student, building a strong foundation in computer and software-related studies.</p></div></div>
+      <div class="item reveal"><div class="card"><span class="k">Training</span><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg> Full-Stack Web Development, SOFT-PRO IT FIRM</h3><p>Alongside my studies I completed a professional certification in full-stack web development, gaining hands-on experience with <span class="hl">HTML, CSS, JavaScript</span> and back-end fundamentals, applied to real practice projects.</p></div></div>
+      <div class="item reveal"><div class="card"><span class="k">Experience</span><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1Z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2Z"/><path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"/></svg> Learning by building</h3><p>Through consistent practice and project-based learning, I learned to structure responsive interfaces, implement interactive features and understand how front-end and back-end systems connect in real applications.</p></div></div>
+      <div class="item reveal"><div class="card"><span class="k">Goal</span><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Where I'm heading</h3><p>To grow as a professional full-stack developer and build real-world web applications that solve practical problems, continuously improving my skills, taking on more advanced projects and building scalable, efficient digital solutions.</p></div></div>
     </div>
-    <!--  -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        AOS.init({
-            delay: 200,
-            once: false,
-            duration: 300,
-        });
-    </script>
-
+  </div>
+</div></section>
+<section class="section" style="padding-top:0"><div class="wrap"><div class="cta-band reveal zoom">
+<h2>Ready to start your project?</h2><p>Let's work together to create something amazing. I'm here to help bring your vision to life.</p><a class="btn" href="contact.html">Contact me <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></section></main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img class="logo-dark" src="photos/logo-white.webp" alt="VPRO-TECH" width="150" height="44"><img class="logo-light" src="photos/logo-purple.webp" alt="VPRO-TECH" width="110" height="33"></a>
+        <p>Building modern digital solutions with creativity, performance and purpose.</p>
+        <div class="socials">
+          <a href="https://wa.me/message/3MCHQLN3LTTCP1" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3ZM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61591227853410" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.2V10H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5Z"/></svg></a>
+          <a href="mailto:vprotechlabs@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Quick links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="index.html#services">Web Development</a></li><li><a href="index.html#services">Website Design</a></li><li><a href="index.html#services">App Development</a></li><li><a href="index.html#services">SEO Optimization</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:vprotechlabs@gmail.com">vprotechlabs@gmail.com</a></li><li><a href="tel:+2349050188834">+234 905 018 8834</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></div>
+      <div><h4>Working hours</h4><ul><li>Mon – Fri: 8:30 AM – 6 PM</li><li>Saturday: 10 AM – 4 PM</li><li>Sunday: Closed</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year>2026</span> VPRO-TECH. All rights reserved.</span><span>Designed &amp; built by VPRO-TECH</span></div>
+  </div>
+</footer>
+<button class="to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<script src="index.js"></script>
 </body>
-
 </html>

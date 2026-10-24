@@ -1,759 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-        <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YV8QT9W566"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YV8QT9W566');
-</script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- google search -->
-    <meta name="google-site-verification" content="wfZUfi6pA0INEGPKWK-PobmfECgV49cNLSBhYSva0JM" />
-
-    <title>VPRO-TECH</title>
-
-    <!-- meta open graph -->
-    <meta property="og:type" content="website">
-
-    <meta property="og:title" content="VPRO-TECH | Full-Stack Developer & Digital Solutions ">
-
-    <meta property="og:description"
-        content="Building modern websites, web applications,and digital experience for businesses and brand">
-
-    <meta property="og:image" content="https://vprotechlabs.vercel.app/photos/lg.png">
-
-
-    <!-- site url -->
-    <meta property="og:url" content="https://vprotechlabs.vercel.app/">
-
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!--  -->
-
-    <!-- fonts -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-
-    <!--for nav, footer  -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
-    <!--  -->
-
-    <!-- font tech stack, about, service.... -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-
-    <!-- for p -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-
-    <!--  -->
-    <!-- cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <!--  -->
-    <script src="https://kit.fontawesome.com/c125bea3e1.js" crossorigin="anonymous"></script>
-    <!--  -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="photos/lo.ico" type="image/x-icon">
-</head>
-
-<body>
-
-    <div class="loading" id="load">
-        <div class="load-pa">
-            <p class="load-la">
-            </p>
-        </div>
-        <p>loading.....</p>
-
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YV8QT9W566');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="wfZUfi6pA0INEGPKWK-PobmfECgV49cNLSBhYSva0JM">
+<title>VPRO-TECH | Full-Stack Developer & Digital Solutions</title>
+<meta name="description" content="Modern, responsive websites and web applications for businesses and brands, by VPRO-TECH.">
+<meta name="theme-color" content="#12001f">
+<link rel="canonical" href="https://vprotechlabs.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VPRO-TECH | Full-Stack Developer & Digital Solutions">
+<meta property="og:description" content="Modern, responsive websites and web applications for businesses and brands, by VPRO-TECH.">
+<meta property="og:image" content="https://vprotechlabs.vercel.app/photos/lg.png">
+<meta property="og:url" content="https://vprotechlabs.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="photos/lo.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="loader" aria-hidden="true"><div><img src="photos/logo-white.webp" alt=""><div class="bar"><i></i></div></div></div>
+<div class="scroll-progress" aria-hidden="true"></div>
+<div class="ambient" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="VPRO-TECH home"><img class="logo-dark" src="photos/logo-white.webp" alt="VPRO-TECH" width="135" height="40"><img class="logo-light" src="photos/logo-purple.webp" alt="VPRO-TECH" width="100" height="30"></a>
+    <nav class="nav-links" aria-label="Main"><a href="#home" class="active" aria-current="page">Home</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme" type="button" aria-label="Switch to light mode"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+      <a class="btn" href="contact.html">Start a project</a>
+      <button class="icon-btn burger" type="button" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
     </div>
-
-
-
-    <!--  -->
-    <nav class="navbar navbar-expand-lg  " id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"> <span><img id="navbarbrandimg" src="photos/llg.png" alt="logo"></span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#service-main">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <i class="fa-solid fa-sun" id="lightdark"> </i>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--  -->
-
-
-    <!--  -->
-    <section>
-
-        <div class="main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-6">
-
-                        <div class="hero-first">
-                            <div class="badge">
-                                <h6 data-aos="zoom-in">AVAILABLE FOR FREELANCE WORK</h6>
-                            </div>
-                            <h2 data-aos="fade-up-right">Elevate your digital experience <span>with</span> modern web
-                                solutions</h2>
-                        </div>
-
-                        <div class="hero-first-sc">
-                            <p>Building modern, responsive web applications with a focus on clean
-                                designs, performance,
-                                and seamless user experience. I create digital solutions that are functional, scalable,
-                                and user-centered.</p>
-                        </div>
-
-                        <div class="btns">
-                            <a href="#Portfolio">View Projects</a>
-                            <a href="contact.html">Contact Me</a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <div class="hero-second">
-                            <img src="photos/ab.jpg" alt="bg">
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-    <!--  -->
-
-
-
-    <!-- DONE HERO -->
-
-    <section>
-
-        <div class="main-tech-st">
-
-            <div class="tech-st" data-aos="zoom-in">
-
-                <h3>Tech Stack</h3>
-                <p>Technologies and tools i used to build modern, responsive, and scalable web applications.</p>
-            </div>
-
-            <div class="container-fluid">
-
-                <div class="row">
-
-                    <div class="col-12 col-md-6  col-lg-3">
-
-                        <div class="stacks" id="sp" data-aos="flip-left">
-                            <h4>Front-End <span>Development<span></h4>
-                            <p>HTML 5</p>
-                            <p>CSS 3</p>
-                            <p>JAVASCRIPT</p>
-                            <p>REACT.JS</p>
-                            <p>BOOSTRAP 5</p>
-                            <P>TAILWIND CSS</P>
-                        </div>
-
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-3">
-
-                        <div class="stacks" data-aos="flip-right">
-                            <h4>Back-End <span>Development</span></h4>
-                            <p>NODE.JS</p>
-                            <p>PHP</p>
-
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="stacks" data-aos="flip-left">
-                            <h4>Database</h4>
-                            <p>MY SQL</p>
-                            <p>MONGO DB</p>
-                        </div>
-
-                    </div>
-
-                    <div class="col-12 col-md-6  col-lg-3">
-                        <div class="stacks" data-aos="flip-right">
-                            <h4>Tools</h4>
-                            <p>GIT</p>
-                            <p>GITHUB</p>
-                            <p>VS-CODE</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!--  -->
-    <section>
-        <div class="about-main">
-
-            <div data-aos="zoom-in">
-                <h3>About</h3>
-                <p>I am a <b>FULL STACK</b> Developer focused on building modern, responsive, and user-friendly web
-                    applications with clean design and strong performance.</p>
-            </div>
-            <div class="aboutfor-cl">
-
-                <div class="aboutfor-ch">
-                    <h4>10+</h4>
-                    <p>Projects Completed</p>
-                </div>
-
-                <div class="aboutfor-ch">
-                    <h4>5+</h4>
-                    <p>Happy Clients</p>
-                </div>
-
-                <div class="aboutfor-ch">
-                    <h4>3+</h4>
-                    <p>Years Experience</p>
-                </div>
-
-                <div class="aboutfor-ch">
-                    <h4>100%</h4>
-                    <p>Clients Satisfaction</p>
-                </div>
-            </div>
-            <a href="about.html">Learn More <i class="fa-solid fa-arrow-right"></i> </a>
-
-        </div>
-    </section>
-
-
-    <!--  -->
-    <section>
-        <div class="skills-main" id="skill">
-
-            <div class="Skills-section" data-aos="zoom-in">
-                <h3><i class="fa-solid fa-code"></i> Skills & Expertise</h3>
-                <p>A combination of technical expertise and pratical problem-solving skills used to build modern digital
-                    solutions.</p>
-
-            </div>
-
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 ">
-                        <div class="skills-ch" data-aos="zoom-in-right">
-                            <h4>Front-End</h4>
-                            <p>Building responsive and interactive user interfaces.</p>
-                            <div class="bar">
-                                <div class="bar-ch">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 ">
-                        <div class="skills-ch" data-aos="zoom-in-left">
-                            <h4>Back-End</h4>
-                            <p>Developing server-side applications and APIS.</p>
-                            <div class="bar">
-                                <div class="bar-ch2">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 ">
-                        <div class="skills-ch" data-aos="zoom-in-right">
-                            <h4>Responsive Design</h4>
-                            <p>Creating experience that work across all devices.</p>
-                            <div class="bar">
-                                <div class="bar-ch3">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 ">
-                        <div class="skills-ch" data-aos="zoom-in-left">
-                            <h4>API integration</h4>
-                            <p>Connecting applications with external services.</p>
-                            <div class="bar">
-                                <div class="bar-ch4">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 ">
-                        <div class="skills-ch" data-aos="zoom-in-right">
-                            <h4>Problem-Solving</h4>
-                            <p>Turning requirement into pratical solutions.</p>
-                            <div class="bar">
-                                <div class="bar-ch5">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-12 col-md-6 ">
-                        <div class="skills-ch" data-aos="zoom-in-left">
-                            <h4>Performance Optimization</h4>
-                            <p>Improving speed and user experience.</p>
-                            <div class="bar">
-                                <div class="bar-ch6">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-    <!--  -->
-
-    <section>
-
-        <div class="service-main" id="service-main">
-
-            <div class="service-first">
-                <h3><i class="fa-solid fa-briefcase"></i> What I Do</h3>
-            </div>
-
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-md-6  col-lg-4">
-                        <div class="service-ch" data-aos="zoom-in-right">
-                            <i class="fa-solid fa-code"></i>
-                            <h4>Website Development</h4>
-                            <p>Building fast,responsive, and scalable websites and web applications using modern
-                                technologies.</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-6  col-lg-4">
-                        <div class="service-ch" data-aos="zoom-in">
-                            <i class="fa-solid fa-tv"></i>
-                            <h4>Website Design</h4>
-                            <p>Designing clean, modern, and user-friendly website interfaces focused on usability and
-                                brand
-                                identity.</p>
-                        </div>
-
-
-                    </div>
-
-                    <div class="col-md-6  col-lg-4">
-                        <div class="service-ch" data-aos="zoom-in-left">
-                            <i class="fa-solid fa-mobile-screen-button"></i>
-                            <h4>App Development</h4>
-                            <p>Creating functional and responsive web applications that solve real-word
-                                problems and improve user
-                                experience.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6  col-lg-4">
-                        <div class="service-ch" data-aos="zoom-in-right">
-                            <i class="fa-solid fa-magnifying-glass-chart"></i>
-                            <h4>SEO Optimization</h4>
-                            <p>Improving website visibility on search engines to increase traffic,reach,and online
-                                growth.
-                            </p>
-                        </div>
-
-
-                    </div>
-                    <div class="col-md-6  col-lg-4">
-                        <div class="service-ch" data-aos="zoom-in">
-                            <i class="fa-solid fa-gears"></i>
-                            <h4>Website Management</h4>
-                            <p>Handling updates,maintenance,securtiy,and performance to ensure website run smoothly.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6  col-lg-4">
-                        <div class="service-ch" data-aos="zoom-in-left">
-                            <i class="fa-solid fa-briefcase"></i>
-                            <h4>Business Websites</h4>
-                            <p>Developing professional websites for business to showcase service, attract customers, and
-                                build credibility.</p>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--  -->
-
-
-    <section>
-
-        <div class="project-main" id="Portfolio">
-
-            <div class="project-first" data-aos="fade-up-right">
-                <h3><i class="fa-solid fa-award"></i> Featured Projects</h3>
-            </div>
-
-            <div class="container">
-                <div class="row">
-
-
-                    <div class="col-12 col-md-6 col-lg-6 ">
-                        <div class="project-real" data-aos="fade-right">
-                            <div class="over"></div>
-                            <img src="photos/projectimg1.png" alt="img" loading="lazy">
-                            <span class="sp">website</span>
-                            <div class="project-t-d-b">
-                                <h4>Cleaning Services</h4>
-                                <p>Professional cleaning solutions</p>
-                                <a href="https://home-gleam.vercel.app/">View live <i
-                                        class="fa-solid fa-arrow-right"></i>
-                                </a></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <div class="project-real" data-aos="fade-left">
-                            <div class="over"></div>
-                            <img src="photos/pro2.jpg" alt="img" loading="lazy">
-                            <span class="sp">website</span>
-                            <div class="project-t-d-b">
-                                <h4>Funiture Store</h4>
-                                <p> Modern furniture showcase</p>
-                                <a href="#">View live <i class="fa-solid fa-arrow-right"></i> </a></a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <div class="project-real" data-aos="fade-right">
-                            <div class="over"></div>
-                            <img src="photos/pro3.jpg" alt="img" loading="lazy">
-                            <span class="sp">website</span>
-                            <div class="project-t-d-b">
-                                <h4>Real Estate Platform</h4>
-                                <p>Property listing website</p>
-                                <a href="#">View live <i class="fa-solid fa-arrow-right"></i> </a></a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <div class="project-real" data-aos="fade-left">
-                            <div class="over"></div>
-                            <img src="photos/pro4.jpg" alt="img" loading="lazy">
-                            <span class="sp">website</span>
-                            <div class="project-t-d-b">
-                                <h4>Medical Website</h4>
-                                <p>Modern healthcare website</p>
-                                <a href="#">View live <i class="fa-solid fa-arrow-right"></i> </a></a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-    <!--  -->
-
-
-    <section>
-
-        <div class="testi" data-aos="zoom-in">
-            <h3>What People Say</h3>
-            <p>Feedback from clients, collaborators, and individuals who have experienced my work and services.</p>
-        </div>
-
-
-        <div class="testi-main-1">
-
-            <div id="testimain" class="testi-main">
-
-
-                <div class="test-review">
-                    <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-
-                    <p><i class="fa-solid fa-quote-left"></i> Impressive Work quality and excellent delivery speed. The
-                        website tured out even better than expected. <i class="fa-solid fa-quote-right"></i>
-                    </p>
-
-                    <p><i class="fa-solid fa-minus"></i>Grace Williams</p>
-                    <p>Business Owner</p>
-                </div>
-
-
-                <div class="test-review">
-                    <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-
-                    <p><i class="fa-solid fa-quote-left"></i> I love the design and how responsive the website is. It
-                        made
-                        my brand look more trustworthy and
-                        modern<i class="fa-solid fa-quote-right"></i></p>
-
-                    <p><i class="fa-solid fa-minus"></i>Sarah Okafor</p>
-                    <p>Fashion Brand Owner</p>
-                </div>
-
-
-                <div class="test-review">
-                    <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-
-                    <p><i class="fa-solid fa-quote-left"></i> Very professional work. The website is well structured and
-                        makes it easy for customers to contact me.<i class="fa-solid fa-quote-right"></i>
-                    </p>
-
-                    <p><i class="fa-solid fa-minus"></i>Micheal Ayo</p>
-                    <p>Resturant Business Owner</p>
-                </div>
-
-
-
-                <div class="test-review">
-                    <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-
-                    <p><i class="fa-solid fa-quote-left"></i> Excellent work on my business website. The design is
-                        modern
-                        and clients can now easily view my
-                        services and contact me.<i class="fa-solid fa-quote-right"></i></p>
-
-                    <p><i class="fa-solid fa-minus"></i>Blesing Ade</p>
-                    <p>Beauty Salon Owner</p>
-                </div>
-
-
-
-                <div class="test-review">
-                    <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-
-                    <p><i class="fa-solid fa-quote-left"></i> The website performance is very smooth and responsive. It
-                        perfectly represents my brand and sevices
-                        online.<i class="fa-solid fa-quote-right"></i></p>
-
-                    <p><i class="fa-solid fa-minus"></i>Peter Okoro</p>
-                    <p>Real Estate Agent</p>
-                </div>
-
-
-
-                <div class="test-review">
-                    <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-
-                    <p><i class="fa-solid fa-quote-left"></i> I'm impressed with the quality of work. The website made
-                        my
-                        business look more credible and
-                        professional.<i class="fa-solid fa-quote-right"></i></p>
-                    <p><i class="fa-solid fa-minus"></i>Anita Bello</p>
-                    <p>Online Store Owner</p>
-                </div>
-
-
-            </div>
-            <div class="btns-review">
-                <button id="btnsreview1"><i class="fa-solid fa-chevron-right"></i></button>
-                <button id="btnsreview2">
-                    <i class="fa-solid fa-chevron-left"></i></button>
-            </div>
-
-        </div>
-    </section>
-    <!--  -->
-
-    <div class="contact-main">
-
-        <h3>Still have a question?</h3>
-        <p>Feel free to reach out if you need help or want to discuss a project.</p>
-        <a href="contact.html">Let's Talk</a>
-
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <span class="badge fade-up"><span class="dot"></span>Available for freelance work</span>
+      <h1><span class="line"><span>Elevate your</span></span><span class="line"><span class="grad-text">digital</span></span><span class="line"><span>experience.</span></span></h1>
+      <div class="role fade-up d1" data-roles="building modern web solutions|full-stack development|responsive websites|web apps &amp; SEO">&gt; <span class="txt"></span><span class="caret"></span></div>
+      <p class="lead fade-up d2">I build modern, responsive web applications with a focus on clean design, performance and a seamless user experience: digital solutions that are functional, scalable and user-centred.</p>
+      <div class="hero-cta fade-up d3">
+        <a class="btn" href="#projects">View projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn ghost" href="contact.html">Contact me</a>
+      </div>
     </div>
-    
-    <!--  -->
-    <div class="footer-main">
-        <div class="container">
-            <div class="row">
-                <div class="col-6  col-md-6 col-lg-4">
-                    <div class="foot-ch">
-                        <h4>VPRO-TECH</h4>
-                        <p>Building modern digital solutions with creativity, performance, and purpose</p>
-                        <a href="https://wa.me/message/3MCHQLN3LTTCP1"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61591227853410"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="foot-ch">
-                        <h4>Quick Links</h4>
-                        <a href="#">Home</a><br>
-                        <a href="about.html">About</a><br>
-                        <a href="#skill">Skills</a><br>
-                        <a href="#Portfolio">Projects</a><br>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-6 col-lg-4 ">
-                    <div class="foot-ch ">
-                        <h4>services</h4>
-                        <span>Web Development</span><br>
-                        <span>Website Design</span><br>
-                        <span>App Development</span><br>
-                        <span>S E O Optimization</span><br>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="foot-ch ">
-                        <h4>Contact Information</h4>
-                        <a href="mailto:vprotechlabs@gmail.com"> <i class="fa-solid fa-envelope"></i> vprotechlabs<span
-                                class="brr">@gmail.com</span></a><br>
-                        <a href="tel:09050188834"><i class="fa-solid fa-phone"></i> 09050188834</a>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="foot-ch">
-                        <h4>Legal</h4>
-                        <a href="terms.html">Terms and Condition</a><br>
-                        <a href="privacy.html">Privacy Policy</a>
-                    </div>
-                </div>
-
-
-
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="foot-ch ">
-                        <h4>Working Hours</h4>
-                        <i class="fa-solid fa-clock"></i><span>Monday-Friday</span><br>
-                        <span>8:30 AM - 6 PM</span><br>
-
-                        <i class="fa-solid fa-clock"></i><span>Saturday</span><br>
-                        <span>10:00 AM - 4:00 PM</span><br>
-
-                        <i class="fa-solid fa-clock"></i><span>Sunday</span> <br>
-                        <span>Closed</span>
-                    </div>
-                </div>
-
-            </div>
-            <span class="copyright"> &copy; 2026 VPRO-TECH. All Rights Reserved.</span>
-        </div>
+    <div class="portrait fade-up d2">
+      <div class="ring"></div>
+      <div class="frame"><img src="photos/portrait.webp" alt="Portrait of the VPRO-TECH developer" width="760" height="1009" fetchpriority="high"></div>
+      <span class="chip c1">&lt;<b>React</b> /&gt;</span>
+      <span class="chip c2">{ <b>Node.js</b> }</span>
+      <span class="chip c3"><b>✓</b> Responsive</span>
     </div>
-    <!--  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </div>
+</section>
 
-    <script>
-        AOS.init({
-            delay: 100,
-            once: false,
-            duration: 300,
-        });
-    </script>
+<div class="marquee" aria-label="Technologies"><div class="track"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React.js</span><span>Tailwind CSS</span><span>Bootstrap 5</span><span>Node.js</span><span>PHP</span><span>MySQL</span><span>MongoDB</span><span>Git</span><span>GitHub</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React.js</span><span>Tailwind CSS</span><span>Bootstrap 5</span><span>Node.js</span><span>PHP</span><span>MySQL</span><span>MongoDB</span><span>Git</span><span>GitHub</span></div></div>
 
+<section class="section" id="stack">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Tech stack</span><h2>Tools I <span class="grad-text">build</span> with</h2><p>Technologies and tools I use to build modern, responsive and scalable web applications.</p></div>
+    <div class="stack"><div class="card reveal" style="--d:0.0s"><h3>Front-end</h3><div class="tags"><span class=tag>HTML5</span><span class=tag>CSS3</span><span class=tag>JavaScript</span><span class=tag>React.js</span><span class=tag>Bootstrap 5</span><span class=tag>Tailwind CSS</span></div></div><div class="card reveal" style="--d:0.08s"><h3>Back-end</h3><div class="tags"><span class=tag>Node.js</span><span class=tag>PHP</span></div></div><div class="card reveal" style="--d:0.16s"><h3>Database</h3><div class="tags"><span class=tag>MySQL</span><span class=tag>MongoDB</span></div></div><div class="card reveal" style="--d:0.24s"><h3>Tools</h3><div class="tags"><span class=tag>Git</span><span class=tag>GitHub</span><span class=tag>VS Code</span></div></div></div>
+  </div>
+</section>
 
+<section class="section" id="about" style="padding-top:0">
+  <div class="wrap about-strip">
+    <div class="photo reveal left"><img src="photos/portrait-2.webp" alt="VPRO-TECH developer portrait" width="700" height="930" loading="lazy"></div>
+    <div class="reveal right">
+      <span class="eyebrow">About</span>
+      <h2>I am a <span class="grad-text">full-stack</span> developer</h2>
+      <p>Focused on building modern, responsive and user-friendly web applications with clean design and strong performance.</p>
+      <div class="stats"><div class="stat reveal" style="--d:0.0s"><strong data-count="10" data-suffix="+">0+</strong><span>Projects completed</span></div><div class="stat reveal" style="--d:0.08s"><strong data-count="5" data-suffix="+">0+</strong><span>Happy clients</span></div><div class="stat reveal" style="--d:0.16s"><strong data-count="3" data-suffix="+">0+</strong><span>Years experience</span></div><div class="stat reveal" style="--d:0.24s"><strong data-count="100" data-suffix="%">0%</strong><span>Client satisfaction</span></div></div>
+      <a class="btn ghost" href="about.html">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
 
+<section class="section" id="skills" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Skills &amp; expertise</span><h2>What I bring <span class="grad-text">to the table</span></h2><p>Technical expertise and practical problem solving, combined to build modern digital solutions.</p></div>
+    <div class="grid-3"><div class="card reveal" style="--d:0.0s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></div><h3>Front-end</h3><p>Building responsive and interactive user interfaces.</p></div><div class="card reveal" style="--d:0.08s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></svg></div><h3>Back-end</h3><p>Developing server-side applications and APIs.</p></div><div class="card reveal" style="--d:0.16s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="14" height="11" rx="2"/><rect x="17" y="8" width="5" height="12" rx="1.5"/><path d="M6 19h6"/></svg></div><h3>Responsive design</h3><p>Creating experiences that work across all devices.</p></div><div class="card reveal" style="--d:0.0s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0V8ZM12 18v4"/></svg></div><h3>API integration</h3><p>Connecting applications with external services.</p></div><div class="card reveal" style="--d:0.08s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V16h8v-1.3A7 7 0 0 0 12 2Z"/></svg></div><h3>Problem solving</h3><p>Turning requirements into practical solutions.</p></div><div class="card reveal" style="--d:0.16s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg></div><h3>Performance optimization</h3><p>Improving speed and user experience.</p></div></div>
+  </div>
+</section>
 
+<section class="section" id="services" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head center reveal"><span class="eyebrow">What I do</span><h2>Services</h2><p>From a first business website to a full web app, built properly and looked after.</p></div>
+    <div class="grid-3"><div class="card reveal" style="--d:0.0s"><span class="num">01</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></div><h3>Website Development</h3><p>Fast, responsive and scalable websites and web applications built with modern technologies.</p></div><div class="card reveal" style="--d:0.08s"><span class="num">02</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div><h3>Website Design</h3><p>Clean, modern, user-friendly interfaces focused on usability and brand identity.</p></div><div class="card reveal" style="--d:0.16s"><span class="num">03</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M11 18h2"/></svg></div><h3>App Development</h3><p>Functional, responsive web applications that solve real-world problems.</p></div><div class="card reveal" style="--d:0.0s"><span class="num">04</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div><h3>SEO Optimization</h3><p>Better visibility on search engines to grow traffic, reach and online presence.</p></div><div class="card reveal" style="--d:0.08s"><span class="num">05</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Website Management</h3><p>Updates, maintenance, security and performance, so your site keeps running smoothly.</p></div><div class="card reveal" style="--d:0.16s"><span class="num">06</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2M2 13h20"/></svg></div><h3>Business Websites</h3><p>Professional websites that showcase your services, attract customers and build credibility.</p></div></div>
+  </div>
+</section>
+
+<section class="section" id="projects" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Portfolio</span><h2>Featured <span class="grad-text">projects</span></h2><p>A selection of recent website builds.</p></div>
+    <div class="projects"><a class="project reveal left" href="https://home-gleam.vercel.app/" target="_blank" rel="noopener" aria-label="View Cleaning Services live"><div class="shot"><img src="photos/project-cleaning.webp" alt="Cleaning Services website screenshot" loading="lazy" width="900" height="560"><span class="pill">Website</span></div><div class="body"><div><h3>Cleaning Services</h3><p>Professional cleaning solutions</p></div><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div></a><article class="project reveal right"><div class="shot"><img src="photos/project-furniture.webp" alt="Furniture Store website screenshot" loading="lazy" width="900" height="560"><span class="pill">Website</span></div><div class="body"><div><h3>Furniture Store</h3><p>Modern furniture showcase</p></div><span class="soon">Live link soon</span></div></article><article class="project reveal left"><div class="shot"><img src="photos/project-realestate.webp" alt="Real Estate Platform website screenshot" loading="lazy" width="900" height="560"><span class="pill">Website</span></div><div class="body"><div><h3>Real Estate Platform</h3><p>Property listing website</p></div><span class="soon">Live link soon</span></div></article><article class="project reveal right"><div class="shot"><img src="photos/project-medical.webp" alt="Medical Website website screenshot" loading="lazy" width="900" height="560"><span class="pill">Website</span></div><div class="body"><div><h3>Medical Website</h3><p>Modern healthcare website</p></div><span class="soon">Live link soon</span></div></article></div>
+  </div>
+</section>
+
+<section class="section" id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Testimonials</span><h2>What people <span class="grad-text">say</span></h2><p>Feedback from clients and collaborators who have experienced my work.</p></div>
+    <div class="reviews reveal"><article class="card review"><div class="stars" aria-label="4 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="off" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg></div><blockquote>“Impressive work quality and excellent delivery speed. The website turned out even better than expected.”</blockquote><div class="who"><span class="avatar">G</span><div><strong>Grace Williams</strong><span>Business Owner</span></div></div></article><article class="card review"><div class="stars" aria-label="3 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="off" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="off" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg></div><blockquote>“I love the design and how responsive the website is. It made my brand look more trustworthy and modern.”</blockquote><div class="who"><span class="avatar">S</span><div><strong>Sarah Okafor</strong><span>Fashion Brand Owner</span></div></div></article><article class="card review"><div class="stars" aria-label="3 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="off" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="off" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg></div><blockquote>“Very professional work. The website is well structured and makes it easy for customers to contact me.”</blockquote><div class="who"><span class="avatar">M</span><div><strong>Micheal Ayo</strong><span>Restaurant Business Owner</span></div></div></article><article class="card review"><div class="stars" aria-label="4 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="off" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg></div><blockquote>“Excellent work on my business website. The design is modern and clients can now easily view my services and contact me.”</blockquote><div class="who"><span class="avatar">B</span><div><strong>Blessing Ade</strong><span>Beauty Salon Owner</span></div></div></article><article class="card review"><div class="stars" aria-label="4 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="off" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg></div><blockquote>“The website performance is very smooth and responsive. It perfectly represents my brand and services online.”</blockquote><div class="who"><span class="avatar">P</span><div><strong>Peter Okoro</strong><span>Real Estate Agent</span></div></div></article><article class="card review"><div class="stars" aria-label="2 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="off" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="off" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" class="off" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg></div><blockquote>“I'm impressed with the quality of work. The website made my business look more credible and professional.”</blockquote><div class="who"><span class="avatar">A</span><div><strong>Anita Bello</strong><span>Online Store Owner</span></div></div></article></div>
+    <div class="reviews-nav"><button class="icon-btn" id="prevReview" type="button" aria-label="Previous review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><button class="icon-btn" id="nextReview" type="button" aria-label="Next review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div>
+  </div>
+</section>
+<section class="section" style="padding-top:0"><div class="wrap"><div class="cta-band reveal zoom">
+<h2>Still have a question?</h2><p>Feel free to reach out if you need help or want to discuss a project.</p><a class="btn" href="contact.html">Let's talk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></section></main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img class="logo-dark" src="photos/logo-white.webp" alt="VPRO-TECH" width="150" height="44"><img class="logo-light" src="photos/logo-purple.webp" alt="VPRO-TECH" width="110" height="33"></a>
+        <p>Building modern digital solutions with creativity, performance and purpose.</p>
+        <div class="socials">
+          <a href="https://wa.me/message/3MCHQLN3LTTCP1" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3ZM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61591227853410" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.2V10H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5Z"/></svg></a>
+          <a href="mailto:vprotechlabs@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Quick links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="index.html#services">Web Development</a></li><li><a href="index.html#services">Website Design</a></li><li><a href="index.html#services">App Development</a></li><li><a href="index.html#services">SEO Optimization</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:vprotechlabs@gmail.com">vprotechlabs@gmail.com</a></li><li><a href="tel:+2349050188834">+234 905 018 8834</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></div>
+      <div><h4>Working hours</h4><ul><li>Mon – Fri: 8:30 AM – 6 PM</li><li>Saturday: 10 AM – 4 PM</li><li>Sunday: Closed</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year>2026</span> VPRO-TECH. All rights reserved.</span><span>Designed &amp; built by VPRO-TECH</span></div>
+  </div>
+</footer>
+<button class="to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<script src="index.js"></script>
 </body>
-
 </html>
